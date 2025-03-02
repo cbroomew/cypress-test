@@ -9,6 +9,7 @@ export default defineConfig({
       bundler: 'vite',
       viteConfig,
     },
+    specPattern: "cypress/component/**/*.cy.{js,jsx,ts,tsx}"
   },
 
   e2e: {
@@ -16,5 +17,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    supportFile: false,
+    specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
   },
 });
