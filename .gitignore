@@ -1,1 +1,4 @@
 node_modules
+# Ignore compiled TypeScript files
+server/dist/
+client/dist/
